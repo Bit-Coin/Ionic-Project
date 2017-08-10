@@ -1,0 +1,28 @@
+<ion-modal-view class="bg-gradient">
+    <ion-header-bar class="bar-assertive">
+        <button class="button button-icon button-clear pull-left col-10 button-light ion-ios-arrow-thin-left" ng-click="closePost()"></button>
+        <h1 class="reg-title col-80">Share</h1>
+    </ion-header-bar>
+
+    <ion-content>
+        <div class="card">
+            <div class="item item-divider item-card no-padding">
+                <img ng-show="post.image !== undefined" ng-src="{{post.image}}" class="img-full">
+            </div>
+            <div class="item item-input ">
+                <input type="text" ng-model="post.description" autocomplete="off" placeholder="Add a description...">
+            </div>
+            <label class="item item-input">
+                <i class="icon ion-location"></i>
+                <!--<ion-google-place placeholder="Enter an address, Apt# and ZIP" ng-model="location" current-location="true" />-->
+                <input type="text" ng-click="searchPopup()" ng-readonly="true" placeholder="Search your location" ng-value="post.location" ng-model="post.location">
+            </label>
+        </div>
+    </ion-content>
+
+    <div class="bar bar-footer share-div">
+        <button class="button button-full button-assertive share-btn item-icon-left" ng-click="shareImg(post)">
+            Share
+        </button>
+    </div>
+</ion-modal-view>

@@ -1,0 +1,34 @@
+<ion-modal-view class="bg-gradient">
+  <ion-header-bar class="bar-assertive">
+    <!-- style attribute for Android -->
+    
+    <button class="button button-icon button-clear pull-left col-10 button-light ion-ios-arrow-thin-left" ng-click="closeRegister()"></button>
+    <h1 class="reg-title col-80">Create Account</h1>
+    <button class="button button-icon col-10 button-clear pull-right button-light ion-ios-checkmark-empty" ng-click="signupWithEmail(reg)"></button>
+  </ion-header-bar>
+
+  <ion-content>
+    <div class="list">
+      <label class="item item-input">
+        <i class="icon ion-ios-person-outline placeholder-icon"></i>
+        <input type="text" ng-model="reg.username" placeholder="Username">
+      </label>
+      <label class="item item-input">
+        <i class="icon ion-ios-email-outline placeholder-icon"></i>
+        <input type="email" ng-model="reg.email" placeholder="Email">
+      </label>
+      <label class="item item-input">
+        <i class="icon ion-ios-locked-outline placeholder-icon"></i>
+        <input type="password" ng-model="reg.password" placeholder="Password">
+      </label>
+      <label class="item item-input">
+        <i class="icon ion-ios-locked-outline placeholder-icon"></i>
+        <input type="password" ng-model="reg.confirm" placeholder="Confirm Password">
+      </label>
+    </div>
+
+    <p class="calm text-center">
+      By registering you agree to the<br/>Terms of Use
+    </p>
+  </ion-content>
+</ion-modal-view>

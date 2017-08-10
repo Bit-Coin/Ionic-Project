@@ -1,0 +1,53 @@
+<ion-view hide-nav-bar="true" scroll="false" view-title="Account">
+    <div class="bar bar-header bar-assertive">
+        <button class="button pull-left button-icon button-clear button-light ion-ios-arrow-thin-left" ng-click="profileCtrl.gotoHome()"></button>
+        <h1 class="title">
+            Account
+        </h1>
+    </div>
+    
+  
+    <ion-content class="has-header" class="stable-bg has-bg" ng-init="profileCtrl.getProfileInfo()" ng-style="{'background-image': 'url(\'' + 'img/bg.png' + '\')'}">
+        <button class="button button-icon edit-profile-btn ion-edit calm" ng-show="!profileCtrl.flag" ng-click="profileCtrl.choosePhoto()"></button>
+        <div class="list card profile-top text-center">
+            <div class="item item-text-wrap">
+                <button class="button button-icon ion-edit calm"></button>
+                <img ng-src="{{profileCtrl.imgURI ? profileCtrl.imgURI : 'img/photo1.png'}}" class="avatar-profile" alt="">
+                <h2 class="font-thin">{{profileCtrl.username}}</h2>
+                <span>{{profileCtrl.description ? profileCtrl.description : 'Always in search of new flavors, I particularly like sweet desserts!'}}</span>
+            </div>
+            <div class="item item-divider no-padding-top profil-divider">
+                Payment Options
+            </div>
+            <div class="list rewards">
+                <label class="item item-input">
+                    <i class="icon ion-card" style="padding-right:10px; font-size:25px; color: #c3c3c3"></i>
+                    <input type="text"  placeholder="Add a card">
+                </label>
+            </div>
+            <div class="item item-divider no-padding-top profil-divider">
+                General
+            </div>
+            <div class="list">
+                <label class="item item-input">
+                    <i class="icon ion-ios-email-outline placeholder-icon"></i>
+                    <input type="text"  placeholder="johndoe@mail.com">
+                </label>
+            </div>
+            <div class="item item-divider no-padding-top profil-divider">
+                Settings
+            </div>
+            <div class="list">
+                <label class="item item-input profile-setting-item" ng-click="profileCtrl.resetPass()">
+                  <small>Reset Password</small>
+                </label>
+                <label class="item item-input profile-setting-item" ng-click="profileCtrl.linkedAcc()">
+                  <small>Linked Accounts</small>
+                </label>
+                <label class="item item-input profile-setting-item" ng-click="profileCtrl.logout()">
+                  <small>Logout</small>
+                </label>
+                  </div>
+        </div>
+    </ion-content>
+</ion-view>

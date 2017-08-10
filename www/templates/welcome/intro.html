@@ -1,0 +1,37 @@
+<ion-view class="landing-page" scroll="true">
+  <ion-content scroll="true" style="padding-top: 100px;">
+    <div class="landing-page-logo">
+      <img src="img/logo@3x.png" style="width:35%;margin-bottom:40px;">
+    </div>
+    <div class="row row-center center-content">
+      <div class="col col-center">
+        <form class="login-form" name="loginForm" novalidate="">
+          <a ng-click="loginWithFacebook()" class="auth-btn button button-block button-positive">Login with Facebook<i class="icon facebook"></i></a>
+          <div class="cred-div list list-inset">
+            <label class="cred-label item item-input bar">
+              <i class="icon ion-ios-email-outline placeholder-icon"></i>
+              <input type="text" required="" name="email" ng-model="welcome.email" placeholder="Email address">
+            </label>
+            <label class="cred-label item item-input">
+              <i class="icon ion-ios-locked-outline placeholder-icon"></i>
+              <input type="password" required="" ng-model="welcome.password" placeholder="Password">
+            </label>
+          </div>
+          <a ng-click="welcome.loginWithEmail($event)" class="auth-btn button button-block button-assertive">
+            Sign in
+          </a>
+        </form>
+      </div>
+    </div>   
+  </ion-content>
+  <div class="bar bar-footer bar-transparent" >
+    <div class="row">
+      <div class="col col-left">
+        <a href="" ng-click="openRegister()">Create Account</a>
+      </div>
+      <div class="col col-right">
+        <a href="" ng-click="openForget()">Forget Password</a>
+      </div>
+    </div>
+  </div>
+</ion-view>

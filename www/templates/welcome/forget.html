@@ -1,0 +1,21 @@
+<ion-modal-view class="bg-gradient">
+  <ion-header-bar class="bar-assertive">
+    <!-- style attribute for Android -->
+    <button class="button button-icon button-clear pull-left col-10 button-light ion-ios-arrow-thin-left" ng-click="closeForget()"></button>
+    <h1 class="reg-title col-80">Forget Password</h1>
+    <button class="button button-icon col-10 button-clear pull-right button-light ion-ios-checkmark-empty" ng-click="forgotPassword(forget)"></button>
+  </ion-header-bar>
+
+  <ion-content>
+    <div class="list">
+      <label class="item item-input">
+        <i class="icon ion-ios-email-outline placeholder-icon"></i>
+        <input type="text" ng-model="forget.email" placeholder="Email">
+      </label>
+    </div>
+
+    <p class="calm text-center">
+      Forgot your password ?<br/>No panic, enter your email address!
+    </p>
+  </ion-content>
+</ion-modal-view>

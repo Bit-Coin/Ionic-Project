@@ -1,0 +1,51 @@
+<ion-view hide-nav-bar="true" scroll="false" view-title="Account">
+  <div class="bar bar-header bar-assertive">
+      <button class="button pull-left button-icon button-clear button-light ion-ios-arrow-thin-left" ng-click="dealsCtrl.gotoHome()"></button>
+      <h1 class="title">
+        Deals
+      </h1>
+    </div>
+  
+    <div class="deals-cat-div" style="margin-top: 65px;">
+      <div class="button-bar">
+        <a id="deals-cat-btn-left" ng-class="dealsCtrl.nearby" ng-click="dealsCtrl.nearbySearch()">Nearby</a>
+        <a id="deals-cat-btn-right" ng-class="dealsCtrl.claimed" ng-click="dealsCtrl.claimedSearch()">Claimed</a>
+      </div>
+    </div>
+    <div id="map" data-tap-disabled="true"></div>
+    <div class="deals-stripe">335 Deals - Tap to enlarge map</div>
+  <ion-content class="has-header" ng-init="dealsCtrl.initMap()" scroll="true" style="margin-top: 270px; position: absolute;">
+    <ion-list>
+      <a class="item item-thumbnail-left" href="#">
+        <img src="img/example4.png">
+        <h2>Pretty Hate Machine</h2>
+        <p>Nine Inch Nails</p>
+      </a>
+      <a class="item item-thumbnail-left" href="#">
+        <img src="img/example4.png">
+        <h2>Pretty Hate Machine</h2>
+        <p>Nine Inch Nails</p>
+      </a>
+      <a class="item item-thumbnail-left" href="#">
+        <img src="img/example4.png">
+        <h2>Pretty Hate Machine</h2>
+        <p>Nine Inch Nails</p>
+      </a>
+      <a class="item item-thumbnail-left" href="#">
+        <img src="img/example4.png">
+        <h2>Pretty Hate Machine</h2>
+        <p>Nine Inch Nails</p>
+      </a>
+      <a class="item item-thumbnail-left" href="#">
+        <img src="img/example4.png">
+        <h2>Pretty Hate Machine</h2>
+        <p>Nine Inch Nails</p>
+      </a>
+      <a class="item item-thumbnail-left" href="#">
+        <img src="img/example4.png">
+        <h2>Pretty Hate Machine</h2>
+        <p>Nine Inch Nails</p>
+      </a>
+    </ion-list>
+  </ion-content>
+</ion-view>

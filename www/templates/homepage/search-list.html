@@ -1,0 +1,20 @@
+<ion-modal-view class="bg-gradient">
+  <ion-header-bar class="bar-assertive">
+    <button class="button button-icon button-clear pull-left col-10 button-light ion-ios-arrow-thin-left" ng-click="closeList()"></button>
+    <h1 class="reg-title col-80">Search List</h1>
+  </ion-header-bar>
+  <label class="item item-input" style="margin-top: 65px">
+    <i class="icon ion-location"></i>
+    <!--<ion-google-place placeholder="Enter an address, Apt# and ZIP" ng-model="location" current-location="true" />-->
+    <input type="text" ng-model="searchKey" ng-value="searchKey" autocomplete="off">
+  </label>
+  <ion-content style=" margin-top: 45px;position: absolute;">
+    <div class="list">
+      <ul class="list">
+        <li class="item place-item" ng-repeat="place in restaurants | filter : searchKey" ng-click="setLocation({{place}})">
+          {{place.name}}
+        </li>
+      </ul>
+    </div>
+  </ion-content>
+</ion-modal-view>

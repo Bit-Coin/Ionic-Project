@@ -1,0 +1,607 @@
+@font-face {
+  font-family: "Tangerine";
+  src: url('Tangerine.ttf');
+}
+
+.no-padding {
+  padding:0px;
+}
+
+.no-padding-right {
+  padding-right:0px;
+}
+
+.no-padding-left {
+  padding-left:0px;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0px;
+}
+
+.horizontal-padding {
+  padding-bottom: 0px;
+  padding-top: 5px;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.margin-top-small {
+  margin-top: 10px;
+}
+
+/* Timeline */
+.item-upside {
+  margin-top: -5px;
+}
+
+.p-item-text
+{
+  font-size:13px !important;
+  color:#666;
+}
+
+.link-none {
+  font-weight : bold;
+  text-decoration:none;
+  color:#387ef5;
+}
+
+.p-item-text {
+  color:blue;
+}
+
+.img-full {
+  width:100%;
+  height:100%;
+}
+
+.top-icon {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 40px;
+  height: 40px;
+  padding-top: 8px;
+  text-align:center;
+  background-color:rgba(97, 97, 97, 0.71);
+  border-radius: 4px;
+}
+
+.top-icon a {
+  color:white;
+    font-size:24px;
+}
+
+.icon-social {
+  font-size:16px;
+}
+
+/* Profile */
+.profile-top {
+  margin-top: 90px;
+  position: relative;
+  overflow: initial;
+}
+  .profile-top .item {
+    padding-top: 90px;
+  }
+  .profile-top h2 {
+    font-size: 24px;
+  }
+  .profile-top .ion-edit {
+    position: absolute;
+    top: 0;
+    right: 8px;
+  }
+
+.avatar-profile {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  position: absolute;
+  top: -70px;
+  left: 50%;
+  margin-left: -70px;
+}
+
+.avatar-stack {
+  position: relative;
+  display: inline-block;
+}
+  .avatar-stack img {
+    position: absolute;
+  }
+    .avatar-stack img:nth-child(1) {
+      left: 0px;
+    }
+    .avatar-stack img:nth-child(2) {
+      left: -8px;
+    }
+    .avatar-stack img:nth-child(3) {
+      left: -16px;
+    }
+
+.avatar-small {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #eee;
+  vertical-align: middle;
+}
+
+.button-fab {
+  position: fixed;
+  right: 16px;
+  bottom: 64px;
+  z-index: 100;
+  color: #fff;
+  width: 48px;
+  height: 48px;
+  font-size: 20px;
+  border-radius: 999em;
+  text-align: center;
+  line-height: 48px;
+}
+
+/* Award */
+.item-award {
+  margin-top:10px;
+  padding-top: 5px;
+  border-top: 1px solid #666;
+  text-align: left;
+}
+
+/* Account */
+
+.profil-divider {
+  padding-top: 5px !important;
+  text-align: left;
+}
+
+.card .list {
+  margin-bottom: 0px;
+}
+  .card .list .item {
+    padding-top: 5px !important;
+  }
+  .card .setting {
+    padding-top: 15px !important;
+    text-align: left;
+    font-size: 14px;
+  }
+
+.rewards .item input {
+  color:black;
+}
+
+.text {
+  padding-top: 10px;
+  margin-bottom: 0px;
+}
+
+input[disabled] {
+  background-color: inherit;
+}
+
+/* Welcome */
+.background {
+  background-image:url(../img/fortunate_bg.png);
+  background-position: center top;
+  background-size: auto 100%;
+  /*
+  -webkit-filter: grayscale(100%);
+  */
+}
+
+.scroll-vertical {
+  display: table !important;
+  width: 100% !important;
+  height: 100% !important;
+  text-align: center;
+  margin-top:auto;
+  margin-bottom:auto;
+}
+  .scroll-vertical .scroll {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+  .scroll-vertical .list {
+    margin-bottom: 0;
+    border-radius: 2px 2px 0px 0px;
+  }
+  .scroll-vertical .item {
+    border:none;
+  }
+  .scroll-vertical .bar {
+    border-bottom:1px solid black;
+    height: 50px;
+  }
+
+  .scroll-vertical .button {
+    margin: 0;
+    border-radius: 0px 0px 2px 2px;
+  }
+
+.placeholder-icon {
+  font-size: 28px;
+  margin-right: 5px;
+}
+
+.bar-transparent {
+  background-color: transparent;
+  background-image: none;
+  border:none;
+  color:white;
+}
+  .bar-transparent .col-left {
+    text-align: left;
+  }
+  .bar-transparent .col-right {
+    text-align: right;
+  }
+  .bar-transparent .col a {
+    text-decoration: none;
+    color:inherit;
+  }
+
+/* Result */
+.boxing-row {
+  padding: 0px;
+}
+  .boxing-row .col-50 {
+    height: 120px;
+  }
+    .boxing-row .img {
+      padding: 0px;
+      overflow: hidden;
+    }
+      .boxing-row .img img {
+        width: 100%;
+      }
+    .boxing-row .description {
+      padding: 0px;
+      background-color: rgb(245, 245, 245);
+    }
+      .boxing-row .description p {
+        font-size: 12px;
+      }
+        .boxing-row .description p a {
+          font-weight : bold;
+          text-decoration: none;
+        }
+      .boxing-row .description h1 {
+        font-size: 16px;
+        font-family: cursive !important;
+        margin-bottom: 5px;
+      }
+      .boxing-row .description .list,
+      .boxing-row .description .item,
+      .boxing-row .description a {
+        width: 100%;
+        height: 100%;
+        /* background-color: rgb(245, 245, 245); */
+      }
+      .boxing-row .description .list {
+        padding-bottom: 0px;
+      }
+      .boxing-row .description .item {
+        margin: 0px;
+        margin-top: -1px;
+        border-bottom: none;
+        border-right: none;
+      }
+
+.row + .row {
+  margin-top: 0px;
+}
+
+/* Details */
+.detail {
+  width: 100%;
+  height: 100%;
+}
+  .illustration {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+  }
+  .illustration img {
+    width: 100%
+  }
+  .detail .content {
+    padding:10px;
+  }
+    .detail .like {
+      background-color:#FFF;
+      width: 80px;
+      height: 30px;
+      display: block;
+      margin-left: auto;
+      z-index: 2;
+      margin-top: -30px;
+      padding: 5px;
+      font-size: 18px;
+      color:#4B4C4D;
+      text-align: center;
+      position: relative;
+    }
+    .detail .content h1 {
+      font-size: 24px;
+      font-family: cursive !important;
+      margin-bottom: 5px;
+    }
+    .detail .content h2 {
+      font-size: 16px;
+    }
+    .detail .content a {
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+
+/*div.cred-div, label.cred-label {
+  background-color: transparent;
+  color: white;
+}
+
+div.cred-div input[type='text'] {
+  color: white;
+}
+
+div.cred-div input[type='password'] {
+  color: white;
+}
+*/
+i.facebook {
+  background: url("../img/facebook.png") no-repeat;
+  background-size: 100% 100%;
+  width: 20px;
+  height: 30px;
+  float: right;
+  margin-top: 7px;
+  margin-right: 18px;
+}
+
+h1.homepage-title {
+  padding-top: 5px;
+}
+
+h1.homepage-title img {
+  height: 25px;
+}
+
+button.deals-btn {
+  background:  url("../img/deals.png");
+}
+
+img.deals-img {
+  margin-top: -70px;
+  margin-right: -15px;
+  width: 100px;
+}
+
+.landing-page {
+    background-image:url(../img/fortunate_bg.png);
+    background-position: center top;
+    background-size: auto 100%;
+}
+.landing-page-footer {
+    background-color: none;
+}
+
+div.landing-page-logo {
+  text-align: center;
+}
+
+.cred-div {
+  margin: 0px;
+}
+
+form.login-form {
+  padding: 20px;
+}
+
+a.auth-btn.button.button-block {
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
+h1.reg-title {
+  color: white;
+  font-size: 22px;
+  text-align: center;
+}
+
+div.post-img {
+  padding: 15px;
+}
+
+div.post-desc {
+  padding-top: 20px;
+  padding-left: 10px;
+  color: gray;
+}
+
+div.share-div {
+  padding: 0px;
+}
+
+/*button.button.button-full.share-btn {
+  background-color: red;
+  color: white;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+button.share-btn.activated {
+  background-color: #FF4359;
+}*/
+
+label.profile-setting-item {
+  line-height: 35px;
+}
+
+button.button.edit-profile-btn {
+  position: absolute;
+  top: -60px;
+  right: 115px;
+  z-index: 1000;
+}
+
+div.deals-cat-div {
+  padding-right: 60px;
+  padding-left: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+div.deals-cat-div a.clicked  {
+  color: white;
+}
+
+div.deals-cat-div a.cliked {
+  color: white;
+}
+
+div.deals-cat-div a {
+  border: 1px solid red;
+  text-align: center;
+  width: 50%;
+  height: 30px;
+  padding-top: 5px;
+  color: red;
+}
+
+a#deals-cat-btn-left {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+a#deals-cat-btn-right {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+a.cliked {
+  background-color:  red;
+  color: white;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+.controls {
+    border: 1px solid transparent;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    position: absolute;
+    line-height: 22px;
+}
+
+#pac-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 90%;
+    margin-bottom: 0;
+    line-height: 15px;
+    font-weight: bold;
+    margin-left: 10%;
+}
+
+#pac-input:focus {
+    border-color: #4d90fe;
+}
+
+.pac-container {
+    font-family: Roboto;
+}
+
+#type-selector {
+    color: #fff;
+    background-color: #4d90fe;
+    padding: 5px 11px 0px 11px;
+}
+
+#type-selector label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+button.button-full.share-btn {
+  border-radius: 4px;
+  height: 45px;
+  margin-top: 0px;
+}
+
+#map {
+  width: 100%;
+  height: 150px;
+  position: relative;
+}
+
+.scroll {
+  height: 100%;
+}
+
+div.deals-stripe {
+  background-color: red;
+  height: 40px;
+  color: white;
+  padding-top: 9px;
+  text-align: center;
+}
+
+.my-infinit-spinner {
+  margin-left: 46%;
+  margin-top: -55px;
+  position: absolute;
+}
+
+.pac-container {
+
+  background-color: #fff;
+  border-radius: 2px;
+  border-top: 1px solid #d9d9d9;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  font-family: Roboto;
+  overflow: hidden;
+  position: absolute !important;
+  z-index: 1000;
+}
+
+.pac-item {
+  border-top: 1px solid #e6e6e6;
+  color: #999;
+  cursor: default;
+  font-size: 11px;
+  line-height: 30px;
+  overflow: hidden;
+  padding: 0 4px;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.item.place-item {
+  font-family: "-apple-system", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
+  font-size:13px;
+}
